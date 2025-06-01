@@ -1,0 +1,41 @@
+name: 機能要望
+description: このプロジェクトの新しい機能や改善案を提案します
+labels:
+  - feature
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        この機能要望は、 @Tsubu-Server/Owner チームに通知されます。
+        ---
+  - type: markdown
+    attributes:
+      value: "## 機能要望"
+  - type: input
+    id: feature-summary
+    attributes:
+      label: 機能の概要
+      description: 提案する機能について簡潔に説明してください
+      placeholder: 何を望んでいるのか、明確かつ簡潔に記述してください
+    validations:
+      required: true
+  - type: textarea
+    id: feature-detail
+    attributes:
+      label: 詳細な説明
+      description: 提案する機能について詳しく説明してください
+      placeholder: この機能がどのように動作し、プロジェクトにどのような利益をもたらすかを説明してください
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 代替案
+      description: 検討した他のアプローチについて説明してください
+      placeholder: 他にどのような方法を検討しましたか？
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: その他の情報
+      description: 機能要望に関するその他のコンテキストを追加してください
